@@ -1,20 +1,46 @@
-# Linux Log Analyzer
+# ?? Linux Log Analyzer (Docker + Terraform)
 
-A Python-based tool to analyze Linux system logs and detect system errors and security events.
+A production-style project that analyzes Linux system logs and automates deployment using Infrastructure as Code.
 
-## Features
-- Detects system errors
-- Identifies failed SSH login attempts
-- Extracts and ranks IP addresses
-- Exports results to JSON
+---
 
-## Usage
-python analyzer.py sample.log
+## ?? Overview
 
-## Technologies
+This project demonstrates how to:
+
+- Analyze Linux logs using Python
+- Detect errors and failed SSH login attempts
+- Containerize applications using Docker
+- Automate deployment using Terraform
+
+---
+
+## ?? Tech Stack
+
 - Python
-- Regex
-- CLI scripting
+- Docker
+- Terraform (Infrastructure as Code)
+- Linux log analysis
 
-## Use Case
-Useful for system administrators to analyze logs and detect potential issues.
+---
+
+## ?? Features
+
+- Detect system errors
+- Identify failed SSH login attempts
+- Extract and rank IP addresses
+- CLI-based input
+- JSON report generation
+- Fully containerized
+- Automated deployment with Terraform
+
+---
+
+## ?? How to Run (Docker)
+
+```bash
+docker build -t log-analyzer .
+docker run log-analyzer sample.log
+
+## Author
+bcleger
